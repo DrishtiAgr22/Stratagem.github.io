@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 130vh;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(130deg, rgb(14, 8, 70), rgb(127, 175, 230));
+    color:#ffffff;
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    max-height: 750px;
+    padding: 40px 40px;
+    background-color: #88c9ec;
+    background-image: url("bg2.jpg") ;
+    opacity: 0.9;
+    border-radius: 25px;
+}
+.container .title{
+    font-size: 30px;
+    font-weight: 1000;
+   
+}
+.container form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 0 12px 0;
+}
+form .form-group{
+    margin-bottom: 10px;
+    width: calc(100% / 2 - 20px);
+}
+form span{
+    display: block;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+.form-group input{
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #2db0df;
+    padding-left: 15px;
+    font-size: 15px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.form-group input:focus,
+.form-group input:valid{
+    border-color: rgb(19, 5, 56);
+}
+form .button{
+    height: 40px;
+    width: 100%;
+    margin: 40px 0;
+}
+form .button input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    cursor: pointer;
+    background: linear-gradient(130deg, rgb(17, 9, 87), rgb(55, 133, 222);
+    color: #1894e6;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+}
+form .button input:hover{
+    background: linear-gradient(130deg,rgb(3, 43, 90),  rgb(17, 9, 87));
+}
+@media(max-width: 584px){
+    .container{
+        max-width: 100%;
+    }
+    form .form-group{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .container form{
+        max-height: 400px;
+        overflow-y: scroll;
+    }
+    .container form::-webkit-scrollbar{
+        width: 0;
+    }x
+    form .button{
+        margin: 20px 0;
+    }
+}
